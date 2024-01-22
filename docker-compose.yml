@@ -1,0 +1,19 @@
+version: '3'
+services:
+  api:
+    build: .
+    ports: 
+      - 8000:8000
+    # env_file:
+    #   - ./.env
+    environment:
+      - DATABASE_HOSTNAME=localhost
+      - DATABASE_PORT=5432
+      - DATABASE_PASSWORD=kevin12
+      - DATABASE_NAME=kevindb
+      - DATABASE_USERNAME=kevin
+      - SECRET_KEY=09d25edguroff78fhc96fhj7flc0sse78
+      - ALGORITHM=HS256
+      - ACCESS_TOKEN_EXPIRE_MINUTES=30
+
+ 
