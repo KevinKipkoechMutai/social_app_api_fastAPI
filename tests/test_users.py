@@ -36,6 +36,7 @@ from app.config import settings
 #     res = client.get("/")
 #     assert res.json().get('message') == 'welcome to my first FastAPI app'
 #     assert res.status_code == 200
+# basic user crud functions
 
 def test_user_create(client):
     res = client.post("/users/", json={"email": "test2@gmail.com", "password": "password101", "phone_number": "123455"})
